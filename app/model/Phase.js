@@ -9,7 +9,7 @@ Ext.define('Mixtape.model.Phase', {
 
     proxy: {
         type: 'rest',
-        url: '/api/phases',
+        url: 'http://localhost:3000/phases',
         reader: {
             type: 'json',
             rootProperty: 'phases'

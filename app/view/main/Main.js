@@ -48,21 +48,14 @@ Ext.define('mixtape.view.main.Main', {
             items: [
                 {
                     xtype: 'grid',
-                    title: 'Artists',
+                    title: 'Playlist',
                     columns: [
-                        { text: 'Name', dataIndex: 'name', flex: 1 },
-                        { text: 'Genre', dataIndex: 'genreId', flex: 1 },
-                        { text: 'Priority', dataIndex: 'priorityId', flex: 1 },
-                        { text: 'Phase', dataIndex: 'phaseId', flex: 1 },
+                        { text: 'Title', dataIndex: 'title', flex: 1 },
+                        { text: 'Rating', dataIndex: 'rating', flex: 1 },
+                        { text: 'Listened', dataIndex: 'listened', flex: 1 }
                     ],
                     store: {
-                        fields: ['name', 'genreId', 'priorityId', 'phaseId'],
-                        data: [
-                            { name: 'Artist 1', genreId: 2, priorityId: 5, phaseId: 1 },
-                            { name: 'Artist 2', genreId: 3, priorityId: 3, phaseId: 2 },
-                            { name: 'Artist 3', genreId: 5, priorityId: 4, phaseId: 3 },
-                            { name: 'Artist 4', genreId: 4, priorityId: 2, phaseId: 4 }
-                        ]
+                        type: 'tracks'
                     }
                 }
             ]

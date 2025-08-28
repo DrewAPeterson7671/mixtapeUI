@@ -9,7 +9,7 @@ Ext.define('Mixtape.model.Media', {
 
     proxy: {
         type: 'rest',
-        url: '/api/media',
+        url: 'http://localhost:3000/media',
         reader: {
             type: 'json',
             rootProperty: 'media'

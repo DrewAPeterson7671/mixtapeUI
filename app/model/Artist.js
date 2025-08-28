@@ -5,7 +5,6 @@ Ext.define('Mixtape.model.Artist', {
         { name: 'name', type: 'string' },
         { name: 'priority_id', type: 'int' },
         { name: 'phase_id', type: 'int' },
-        { name: 'genre_id', type: 'int' },
         { name: 'complete', type: 'boolean' },
         { name: 'wikipedia', type: 'string' },
         { name: 'discogs', type: 'string' },
@@ -15,7 +14,7 @@ Ext.define('Mixtape.model.Artist', {
 
     proxy: {
         type: 'rest',
-        url: '/api/artists',
+        url: 'http://localhost:3000/artists',
         reader: {
             type: 'json',
             rootProperty: 'artists'

@@ -9,7 +9,7 @@ Ext.define('Mixtape.model.ReleaseType', {
 
     proxy: {
         type: 'rest',
-        url: '/api/release_types',
+        url: 'http://localhost:3000/release_types',
         reader: {
             type: 'json',
             rootProperty: 'release_types'
