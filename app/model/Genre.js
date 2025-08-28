@@ -9,7 +9,7 @@ Ext.define('Mixtape.model.Genre', {
 
     proxy: {
         type: 'rest',
-        url: '/api/genres',
+        url: 'http://localhost:3000/genres',
         reader: {
             type: 'json',
             rootProperty: 'genres'

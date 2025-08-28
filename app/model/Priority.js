@@ -9,7 +9,7 @@ Ext.define('Mixtape.model.Priority', {
 
     proxy: {
         type: 'rest',
-        url: '/api/priorities',
+        url: 'http://localhost:3000/priorities',
         reader: {
             type: 'json',
             rootProperty: 'priorities'

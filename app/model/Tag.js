@@ -14,7 +14,7 @@ Ext.define('Mixtape.model.Tag', {
 
     proxy: {
         type: 'rest',
-        url: '/api/tags',
+        url: 'http://localhost:3000/tags',
         reader: {
             type: 'json',
             rootProperty: 'tags'
