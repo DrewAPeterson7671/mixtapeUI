@@ -15,7 +15,7 @@ Ext.define('Mixtape.model.Album', {
 
     proxy: {
         type: 'rest',
-        url: '/api/albums',
+        url: 'http://localhost:3000/albums',
         reader: {
             type: 'json',
             rootProperty: 'albums'

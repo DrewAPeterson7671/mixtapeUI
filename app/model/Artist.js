@@ -14,7 +14,7 @@ Ext.define('Mixtape.model.Artist', {
 
     proxy: {
         type: 'rest',
-        url: '/api/artists',
+        url: 'http://localhost:3000/artists',
         reader: {
             type: 'json',
             rootProperty: 'artists'

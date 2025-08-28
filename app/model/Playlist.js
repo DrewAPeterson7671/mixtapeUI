@@ -15,7 +15,7 @@ Ext.define('Mixtape.model.Playlist', {
 
     proxy: {
         type: 'rest',
-        url: '/api/playlists',
+        url: 'http://localhost:3000/playlists',
         reader: {
             type: 'json',
             rootProperty: 'playlists'
